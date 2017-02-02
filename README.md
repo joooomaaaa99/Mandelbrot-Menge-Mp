@@ -1,1 +1,1 @@
-# Mandelbrot-Menge-Mp
+# Mandelbrot-Menge M+
