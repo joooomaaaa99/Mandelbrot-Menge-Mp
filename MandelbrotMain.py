@@ -1,10 +1,9 @@
-
 """!/usr/bin/python
 -*- coding: UTF-8 -*-
 Date: 07.02.2017
 """
 
-import math 
+import math
 import tkinter
 
 #Fensterbreite
@@ -45,14 +44,15 @@ while True:
     ymax = xmax - xmin + ymin
     deltacalc()
     #Durchgehen aller x-Werte
-    for x in range(0, 500):
+    for xpixel in range(0, 500):
         #Berechnung cr
+        cr = xmin + xpixel * deltax
         #Durchgehen aller y-Werte
-        for y in range(0, 500):
+        for ypixel in range(0, 500):
             #Berechnung ci
-            
+            ci = ymax - ypixel * deltay
             #farbe wählen
             #Rechteck: 1. 2 Koord. Startpunkt, 2. 2 Koord. Endpunkt, von --> zu
             w.create_rectangle(100, 100, 101, 101, fill=farbe)
             
-  w.pack()
+    w.pack()
